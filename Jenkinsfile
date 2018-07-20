@@ -54,7 +54,7 @@ pipeline {
                subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] NEW RELEASE",
                body: """<p>'${env.JOB_NAME} [${env.BUILD_NUMBER}]' NEW RELEASE":</p> 
                     <p>Check console output at <a href='${env.BUILD_URL}'>${env. JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""", 
-                                               to: "irf4n.shah@gmail.com"   
+                                               to: "irf4n.shah@gmail.com"'   
                                               )
                   }
            }
